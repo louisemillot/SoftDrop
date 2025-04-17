@@ -4,18 +4,26 @@
 
 set -x
 declare -a namesArray=(\
-"pythia")
-options0=" --configuration json://dpl-config2.json"
-# options0="-b --configuration json://dpl-config-hybrid-tracks-run2-deriveddataproducer.json"
+"PbPb_LHC20e3a")
+# options0=" --configuration json://../dpl-config_Run2.json"
+options0=" --configuration json://../dpl-config_Run3.json"
 
 declare -a jsonsArray=("$options0")
+
+# Extract parameters from JSON for filename
+R=$(jq -r '.["my-custom-task"].R' "../dpl-config2.json")
+ptmin=$(jq -r '.["my-custom-task"].ptmin' "../dpl-config2.json")
+z_cut=$(jq -r '.["my-custom-task"].z_cut' "../dpl-config2.json")
+beta=$(jq -r '.["my-custom-task"].beta' "../dpl-config2.json")
+n=$(jq -r '.["my-custom-task"].n' "../dpl-config2.json")
 
 # --aggregate-timeframe 10 is used to combine 10 generated events into a timeframe that is then converted to AOD tables
 # note that if you need special configuration for the analysis tasks, it needs to be passed to proxy and converter as well
 
+# Construct output filename
+output_filename="AnalysisResults_${namesArray[0]}_R${R}_pt${ptmin}_zcut${z_cut}_beta${beta}_n${n}.root"
 
-
-# if you want event generator un-comment these following 2 lines
+# if you want event generator, un-comment these following 2 lines
 # o2-sim-dpl-eventgen ${jsonsArray[$i]} |\
 # o2-sim-mctracks-to-aod ${jsonsArray[$i]} |\
 
@@ -57,4 +65,5 @@ o2-analysis-je-estimator-rho ${jsonsArray[$i]} &> pythia8.log
 
 # the very same analysis task can also directly run on an AO2D with McCollisions and McParticles:
 # o2-analysis-mctracks-to-aod-simple-task -b --aod-file <AO2DFile>
-# mv AnalysisResults.root AnalysisResults_hi_${namesArray[$i]}.root
+# Rename the output file
+mv AnalysisResults.root $output_filename
