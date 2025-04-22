@@ -1,6 +1,6 @@
 void plot_histogram() {
     // Ouvrir le fichier ROOT
-    TFile *file = TFile::Open("AnalysisResults_PbPb_zcut0,1_beta0_n=5_N=1000.root");
+    TFile *file = TFile::Open("PbPb_results/AnalysisResults_PbPb_LHC20e3a_R1_pt100_zcut0.1_beta0.5_n-1.root");
     if (!file || file->IsZombie()) {
         std::cerr << "Erreur: Impossible d'ouvrir AnalysisResults.root" << std::endl;
         return;

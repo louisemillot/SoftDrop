@@ -1,7 +1,7 @@
 {
     "internal-dpl-clock": "",
     "internal-dpl-aod-reader": {
-        "aod-file-private": "@../LHC20e3a.txt",
+        "aod-file-private": "@../inputLHC20e3a.txt",
         "aod-max-io-rate": "0",
         "time-limit": "3000",
         "orbit-offset-enumeration": "0",
@@ -24,7 +24,7 @@
         "R": "1",
         "ptmin": "100",
         "z_cut": "0.1",
-        "beta": "0.5",
+        "beta": "-1.0",
         "n": "-1",
         "xmin": "-1",
         "xmax": "10",
