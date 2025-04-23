@@ -1,0 +1,10 @@
+/Users/millot/alice/MyWork/AO2D_Downloads/sim/AOD/001/AO2D.root
+/Users/millot/alice/MyWork/AO2D_Downloads/sim/AOD/002/AO2D.root
+/Users/millot/alice/MyWork/AO2D_Downloads/sim/AOD/003/AO2D.root
+/Users/millot/alice/MyWork/AO2D_Downloads/sim/AOD/004/AO2D.root
+/Users/millot/alice/MyWork/AO2D_Downloads/sim/AOD/005/AO2D.root
+/Users/millot/alice/MyWork/AO2D_Downloads/sim/AOD/006/AO2D.root
+/Users/millot/alice/MyWork/AO2D_Downloads/sim/AOD/007/AO2D.root
+/Users/millot/alice/MyWork/AO2D_Downloads/sim/AOD/008/AO2D.root
+/Users/millot/alice/MyWork/AO2D_Downloads/sim/AOD/009/AO2D.root
+/Users/millot/alice/MyWork/AO2D_Downloads/sim/AOD/010/AO2D.root
