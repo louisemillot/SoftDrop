@@ -1,7 +1,7 @@
 {
     "internal-dpl-clock": "",
     "internal-dpl-aod-reader": {
-        "aod-file-private": "/Users/millot/alice/MyWork/AO2D_Downloads/data/LHC23zzh_pass4/o2_ctf_run00544123_orbit0180594528_tf0000123733_epn312/001/AO2D.root",
+        "aod-file-private": "/Users/millot/alice/MyWork/AO2D_Downloads/data/LHC24ap_pass1/apass1/0000/o2_ctf_run00559387_orbit0311619616_tf0001447030_epn009/001/AO2D.root",
         "aod-max-io-rate": "0",
         "time-limit": "3000",
         "orbit-offset-enumeration": "0",
@@ -20,11 +20,8 @@
         "ccdb-url": "http:\/\/alice-ccdb.cern.ch",
         "isRun2MC": "-1"
     },
-    "tracks-extra-v002-converter": {
-        "processV000ToV002": "false",
-        "processV001ToV002": "true"
-    },
     "zdc-converter": "",
+    "internal-dpl-aod-index-builder": "",
     "tracks-extra-spawner": "",
     "bc-selection-task": {
         "triggerBcShift": "999",
@@ -305,7 +302,7 @@
                     "-1"
                 ],
                 [
-                    "1"
+                    "-1"
                 ],
                 [
                     "-1"
@@ -327,7 +324,7 @@
         "ccdbUrl": "http:\/\/alice-ccdb.cern.ch",
         "ccdbPath": "Centrality\/Estimators",
         "genName": "",
-        "doNotCrashOnNull": "false",
+        "doNotCrashOnNull": "true",
         "reconstructionPass": "",
         "embedINELgtZEROselection": "false",
         "produceHistograms": "false",
@@ -767,7 +764,7 @@
         "centralityMin": "-999",
         "centralityMax": "999",
         "trackOccupancyInTimeRangeMax": "999999",
-        "eventSelections": "sel8FullPbPb",
+        "eventSelections": "sel8",
         "triggerMasks": "",
         "skipMBGapEvents": "false",
         "trackPtMin": "0.150000006",
@@ -790,7 +787,7 @@
         "clusterRejectExotics": "true",
         "hadronicCorrectionType": "0",
         "doEMCALEventSelection": "true",
-        "doEMCALEventSelectionChargedJets": "false",
+        "doEMCALEventSelectionChargedJets": "true",
         "jetRadius": {
             "values": [
                 "0.2"
@@ -812,7 +809,7 @@
         "fillTHnSparse": "false",
         "jetExtraParam": "-99",
         "processChargedJets": "true",
-        "processChargedEvtWiseSubJets": "true",
+        "processChargedEvtWiseSubJets": "false",
         "processNeutralJets": "false",
         "processFullJets": "false",
         "processParticleLevelChargedJets": "false",
@@ -915,11 +912,9 @@
         "processChargedJetsEventWiseSubData": "true",
         "processChargedJetsMCD": "false",
         "processChargedJetsMCP": "false",
-        "eventSelections":"sel8FullPbPb",
-        "trackSelections": "globalTracks",
+        "eventSelections":"sel8",
         "ptLeadingTrackCut":"5"
     },
-
     "internal-dpl-aod-writer": "",
     "internal-dpl-aod-global-analysis-file-sink": "",
     "internal-dpl-injected-dummy-sink": ""
